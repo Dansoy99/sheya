@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#fff0f4" />
+  <title>for my lovelove ♡</title>
+  <style>
+    :root {
+      --pink: #f7b8c8;
+      --deep-pink: #d85f83;
+      --ink: #5a3542;
+      --paper: #fffafc;
+      --soft: #fff0f4;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 10% 15%, #ffe0e9 0, transparent 28%),
+        radial-gradient(circle at 90% 80%, #ffe7ef 0, transparent 30%),
+        var(--soft);
+      font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+      line-height: 1.8;
+      overflow-x: hidden;
+    }
+
+    .hearts {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      overflow: hidden;
+      z-index: 0;
+    }
+
+    .heart {
+      position: absolute;
+      bottom: -40px;
+      color: #e88ca5;
+      opacity: .35;
+      animation: float-up linear infinite;
+      user-select: none;
+    }
+
+    @keyframes float-up {
+      from { transform: translateY(0) rotate(0deg); opacity: 0; }
+      15% { opacity: .4; }
+      85% { opacity: .3; }
+      to { transform: translateY(-115vh) rotate(28deg); opacity: 0; }
+    }
+
+    main {
+      position: relative;
+      z-index: 1;
+      width: min(760px, calc(100% - 28px));
+      margin: 0 auto;
+      padding: 54px 0 36px;
+    }
+
+    .letter {
+      position: relative;
+      background: rgba(255, 250, 252, .88);
+      border: 1px solid #f7d8e1;
+      border-radius: 24px;
+      padding: clamp(22px, 5vw, 42px);
+      box-shadow: 0 18px 50px #9b3c5c12;
+      backdrop-filter: blur(8px);
+    }
+
+    .letter::before {
+      content: "♡";
+      position: absolute;
+      top: -17px;
+      right: 26px;
+      padding: 0 10px;
+      color: var(--deep-pink);
+      background: var(--soft);
+      font-size: 1.8rem;
+    }
+
+    .letter p {
+      margin: 0 0 22px;
+      font-size: clamp(.98rem, 2.5vw, 1.08rem);
+    }
+
+    .letter p:last-child { margin-bottom: 0; }
+
+    .highlight {
+      color: #bd4e71;
+      font-weight: 700;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+        transition-duration: .01ms !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="hearts" aria-hidden="true">
+    <span class="heart" style="left:8%; animation-duration:14s; animation-delay:-3s; font-size:20px;">♡</span>
+    <span class="heart" style="left:24%; animation-duration:18s; animation-delay:-10s; font-size:14px;">♥</span>
+    <span class="heart" style="left:66%; animation-duration:19s; animation-delay:-12s; font-size:18px;">♥</span>
+    <span class="heart" style="left:90%; animation-duration:15s; animation-delay:-8s; font-size:22px;">♡</span>
+  </div>
+
+  <main class="envelope-page">
+    <button class="envelope-button" id="envelopeButton" type="button"
+      aria-expanded="false" aria-controls="loveLetter">
+      <span class="envelope" aria-hidden="true">
+        <span class="letter-preview">for my lovelove<br><span>♡</span></span>
+        <span class="envelope-back"></span>
+        <span class="envelope-flap"></span>
+        <span class="envelope-front"></span>
+        <span class="envelope-heart">♡</span>
+      </span>
+      <span class="tap-hint" id="tapHint">♡ tap to open ♡</span>
+    </button>
+
+    <article class="letter" id="loveLetter" aria-hidden="true">
+      <p>u know what lovelove, i would do everything i can just to make u feel safe, loved, and reassured po. i really love u with all my heart, and i genuinely want our relationship to be the last one for both of us. i want to be with u for a long, long time po, kaya i'm always careful with my actions and the things i do, kasi ayokong may magawa akong makakasakit sayo or makakapagpafeel sayo na hindi kita mahal. i want u to feel loved by me, not just through my words but also through the way i treat u every day. <span class="highlight">gusto ko ikaw lang talaga, lovelove koo :&lt;</span></p>
+
+      <p>and please, if u ever notice something off about me, i hope u know na it's either may sama ng loob ako sayo or may nararamdaman akong jealousy about something. sometimes, i might not know how to express what i feel right away, but that doesn't mean na i want to distance myself from u or that my love for u has changed. i'm still learning how to communicate my feelings better, and i'm trying my best to be more understanding of u po, kasi ayokong masira tayo dahil lang sa mga bagay na kaya naman nating pag-usapan at ayusin together.</p>
+
+      <p>i really want us to have a healthy relationship po, yung kaya nating sabihin sa isa't isa kung ano yung nararamdaman natin without being afraid na baka mag-away tayo or magbago yung pagmamahal natin sa isa't isa. i want us to be comfortable enough to be honest, to listen to each other, and to understand each other even when we don't always see things the same way. i know hindi naman magiging perfect yung relationship natin all the time, and there will be days na mahirap tayong intindihin, but i hope we always choose to understand each other instead of giving up on each other.</p>
+
+      <p>i love u so much, lovelove ko, and i'm really serious about us po. hindi lang kita mahal dahil sa mga masasayang moments natin, but also because i want to be there for u even on the difficult days. i want to keep growing with u, learning with u, and becoming a better partner for u. i want to give u the kind of love that makes u feel secure, appreciated, and never alone. i can't promise na lagi kong magagawa lahat ng tama, but i promise na i'll keep trying, keep learning, and keep choosing u with all my heart. <span class="highlight">ikaw lang talaga ang gusto kong makasama hanggang sa huli, lovelove koo.</span> iloveyouuuuusomuchhhh pooo!</p>
+    </article>
+  </main>
+
+  <style>
+    .envelope-page { width: min(760px, calc(100% - 28px)); text-align: center; padding-top: clamp(70px, 18vh, 150px); }
+    .envelope-button { display: block; width: min(460px, 100%); margin: 48px auto 20px; border: 0; background: transparent; color: inherit; cursor: pointer; padding: 12px; }
+    .envelope { display: block; position: relative; width: min(390px, 88vw); height: 245px; margin: 0 auto; perspective: 900px; filter: drop-shadow(0 18px 24px #a7436420); transition: transform .3s ease; }
+    .envelope-button:hover .envelope { transform: translateY(-5px); }
+    .envelope-back { position: absolute; inset: 24px 0 0; background: #f3a9bd; border-radius: 12px; }
+    .letter-preview { position: absolute; z-index: 1; left: 8%; right: 8%; bottom: 28px; height: 178px; padding-top: 35px; border-radius: 8px; background: #fffafc; color: #a74364; font-family: Georgia, serif; font-size: 1.35rem; box-shadow: 0 3px 12px #7a344410; transition: transform .7s ease; }
+    .letter-preview span { display: inline-block; margin-top: 12px; font-size: 2rem; }
+    .envelope-front { position: absolute; inset: 75px 0 0; z-index: 3; background: #e987a4; clip-path: polygon(0 0, 50% 58%, 100% 0, 100% 100%, 0 100%); border-radius: 0 0 12px 12px; }
+    .envelope-flap { position: absolute; top: 24px; left: 0; right: 0; height: 145px; z-index: 4; background: #f7bfd0; clip-path: polygon(0 0, 100% 0, 50% 100%); transform-origin: top center; transition: transform .65s ease, z-index .1s .3s; border-radius: 12px 12px 0 0; }
+    .envelope-heart { position: absolute; z-index: 5; left: 50%; top: 116px; transform: translate(-50%, -50%); color: #fffafc; font-size: 2.4rem; transition: opacity .2s ease; }
+    .tap-hint { display: block; margin-top: 16px; color: #b94e71; font-weight: 700; letter-spacing: .04em; }
+    .envelope-button.open .envelope-flap { transform: rotateX(180deg); z-index: 0; }
+    .envelope-button.open .letter-preview { transform: translateY(-112px); }
+    .envelope-button.open .envelope-heart { opacity: 0; }
+    .letter { display: none; text-align: left; margin: 28px auto 0; transform-origin: top center; }
+    .letter.open { display: block; animation: unfold .7s ease both; }
+    @keyframes unfold { from { opacity: 0; transform: translateY(-12px) scaleY(.94); } to { opacity: 1; transform: translateY(0) scaleY(1); } }
+    .signoff { text-align: center; color: #bd4e71; font-family: Georgia, serif; font-size: 1.6rem !important; padding-top: 8px; }
+    @media (max-width: 480px) { .envelope { height: 215px; } .letter-preview { height: 158px; } .envelope-flap { height: 125px; } .envelope-front { top: 66px; } .envelope-heart { top: 105px; } }
+  </style>
+
+  <script>
+    const envelopeButton = document.getElementById("envelopeButton");
+    const loveLetter = document.getElementById("loveLetter");
+    const tapHint = document.getElementById("tapHint");
+
+    envelopeButton.addEventListener("click", () => {
+      const isOpen = envelopeButton.classList.toggle("open");
+      envelopeButton.setAttribute("aria-expanded", String(isOpen));
+      loveLetter.classList.toggle("open", isOpen);
+      loveLetter.setAttribute("aria-hidden", String(!isOpen));
+      tapHint.textContent = isOpen ? "♡ your letter is open ♡" : "♡ tap to open ♡";
+      if (isOpen) {
+        window.setTimeout(() => loveLetter.scrollIntoView({ behavior: "smooth", block: "start" }), 250);
+      }
+    });
+  </script>
+</body>
+</html>
